@@ -49,7 +49,7 @@ func TestIsValidLine(t *testing.T) {
 			got := IsValidLine(tt.text)
 			want := tt.expected
 			if want != got {
-				t.Fatalf("expected: %v, got: %v", want, got)
+				t.Fatalf("expected: %v, got: %v. text: %s", want, got, tt.text)
 			}
 		})
 	}
