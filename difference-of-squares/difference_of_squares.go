@@ -1,0 +1,19 @@
+package diffsquares
+
+func SquareOfSum(n int) (result int) {
+	for i := 1; i <= n; i++ {
+		result += i
+	}
+	return result * result
+}
+
+func SumOfSquares(n int) (result int) {
+	for i := 1; i <= n; i++ {
+		result += i * i
+	}
+	return
+}
+
+func Difference(n int) int {
+	return SquareOfSum(n) - SumOfSquares(n)
+}
